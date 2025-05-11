@@ -47,4 +47,6 @@ sudo touch /etc/udev/rules.d/99-gk-low-latency-protocol.rules
 
 echo 'ACTION=="add", SUBSYSTEM=="hid", ATTRS{idVendor}=="054c", ATTRS{idProduct}=="09cc", MODE="0660", GROUP="input", ATTR{bt_poll_interval}="1"' | sudo tee /etc/udev/rules.d/99-gk-low-latency-protocol.rules > /dev/null
 
+sudo udevadm control --reload-rules
+sudo udevadm trigger
 
