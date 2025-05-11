@@ -1,13 +1,13 @@
 # Reduce-InputLag-PS4-Datafrog-Wireless-Controller-On-Linux
 
 
-On Terminal :
+Terminal Commands:
 
-bluetoothctl
+'''bluetoothctl
 power on
 agent on
 default-agent
-scan on
+scan on'''
 
 Press PS buttom (HOME) + Share
 
